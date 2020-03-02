@@ -1,8 +1,8 @@
 import krpc
 from pid import PIDController
 
-throttle_controller = PIDController(0.5, 0.2, 0.5)
-goal_speed = 120
+throttle_controller = PIDController(0.2, 0.2, 0.3)
+goal_speed = 200
 
 conn = krpc.connect(name='Hello World')
 vessel = conn.space_center.active_vessel
