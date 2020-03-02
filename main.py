@@ -1,7 +1,7 @@
 import krpc
 from pid import PIDController
 
-throttle_controller = PIDController(0.5, 0.00001, 0.5)
+throttle_controller = PIDController(0.5, 0.001, 0.5)
 goal_speed = 200
 
 conn = krpc.connect(name='Hello World')
